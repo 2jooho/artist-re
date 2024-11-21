@@ -10,6 +10,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
     matcher: [
-    //   '/(routes)/:path*'
+    //   '/(routes)/:path*', //해당경로는 모두 미들웨어 거침
+    // '/((?!api|_next/static|_next/image|favicon.ico).*)' //미들웨어 예외처리
     ]
   }
