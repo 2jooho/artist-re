@@ -1,3 +1,5 @@
+// api별 url 관리
+//인증이 필요한 url
 const AUTH = Object.freeze({
   LOG_IN: "/aa/auth/login",
   JOIN: "/aa/auth/join",
@@ -39,6 +41,7 @@ const AUTH = Object.freeze({
   PASS_SUCCESS_API: `/aa/auth/pass/success`,
   PASS_CHECK_API: `/aa/user/restPw/Check`,
 });
+
 
 export const API_ROUTE = Object.freeze({
   AUTH,

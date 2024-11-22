@@ -1,3 +1,4 @@
+// 반응형 처리를 위한 가로/세로 퍼센트 추출
 const FIGMA_WINDOW_WIDTH = 2490;
 const FIGMA_WINDOW_HEIGHT = 1156;
 

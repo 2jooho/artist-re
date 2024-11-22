@@ -1,17 +1,14 @@
-import { useQuery, UseQueryOptions } from '@tanstack/react-query';
+import { useQuery} from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 import { MainInfo, ApiError } from '../types/api';
 import {main} from "@/api/auth/auth";
-
-export const QUERY_KEY = {
-    MAIN: ['main'] as const,
-  } as const;
+import { QUERY_KEY } from '@/shared/lib/tanstack-query/queryKeys';
 
   export const useMainInfo = () => {
+      // MainInfo: 성공 시 받아올 데이터의 타입
+      // AxiosError<ApiError>: 에러 발생 시의 타입
     return useQuery<MainInfo, AxiosError<ApiError>>({
-      queryKey: QUERY_KEY.MAIN,
-      queryFn: main,
-      refetchOnWindowFocus: false,
-      retry: false,
+      queryKey: QUERY_KEY.MAIN, // 쿼리를 식별하는 고유 키
+      queryFn: main, // 실제 API 호출하는 함수
     });
   };

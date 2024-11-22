@@ -1,6 +1,7 @@
 import {ApiError} from "@/features/types/api";
 import { AxiosError } from 'axios';
 
+// 에러처리
 export const handleApiError = (error: AxiosError<ApiError>) => {
     if (error.response) {
       // HTTP 에러 응답

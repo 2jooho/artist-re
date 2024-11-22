@@ -32,7 +32,6 @@ export const useAuth = () => {
   const query = useQuery({
     queryKey: ['user'],
     queryFn: fetchUserProfile,
-    retry: false,
     enabled: true,
     staleTime: 1000 * 60 * 5, // 5분
   });

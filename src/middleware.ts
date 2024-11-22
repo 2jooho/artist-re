@@ -8,6 +8,7 @@ export function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
+
 export const config = {
     matcher: [
     //   '/(routes)/:path*', //해당경로는 모두 미들웨어 거침

@@ -1,3 +1,4 @@
+// 위로올리기 버튼 설정
 export const scrollToPosition = (location: 'top' | 'low') => {
     const duration = 500;
     

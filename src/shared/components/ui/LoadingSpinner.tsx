@@ -1,7 +1,7 @@
 interface LoadingSpinnerProps {
     src: string;
   }
-  
+  //로딩 처리
   export const LoadingSpinner = ({ src }: LoadingSpinnerProps) => (
     <div className="flex w-full h-screen items-center justify-center bg-black/60">
       <img 
