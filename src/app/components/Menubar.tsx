@@ -15,7 +15,7 @@ interface MenubarProps {
 export default function Menubar({ children }: MenubarProps) {
   const pathname = usePathname();
   const { isShowOptions, menuVisible, setMenuVisible, dropMenuRef } = useMenu();
-  const { isLogin, handleLogout, isLoading } = useAuth();
+  const { isLogin, handleLogout }:any = useAuth();
   
   if (
     pathname === '/PassSuccess/callback' ||
@@ -26,10 +26,6 @@ export default function Menubar({ children }: MenubarProps) {
         {children}
       </div>
     );
-  }
-
-  if (isLoading) {
-    return <div>Loading...</div>; // 또는 적절한 로딩 컴포넌트
   }
 
   return (

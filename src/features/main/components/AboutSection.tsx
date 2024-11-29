@@ -1,15 +1,15 @@
 import { heightPercentage } from "@/shared/lib/utils/ResponsiveSize";
 import {MainHeader} from "./MainHeader";
+// import backgroundImg from "@/public/images/img/main/aboutBack.gif";
 
 interface AboutSectionProps {
-  backgroundImg: string;
   showText: boolean;
 }
 
-export const AboutSection = ({ backgroundImg, showText }: AboutSectionProps) => (
+export const AboutSection = ({ showText }: AboutSectionProps) => (
   <div 
     className="flex flex-col items-center justify-center w-full h-screen bg-cover bg-no-repeat relative md:h-[50vh]"
-    style={{ backgroundImage: `url(${backgroundImg})` }}
+    style={{ backgroundImage: "url('/images/img/main/aboutBack.gif')" }}
   >
     <div 
       className="absolute top-0 w-full bg-[#0f1c28]" 

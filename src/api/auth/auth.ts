@@ -16,6 +16,12 @@ export const main: any = async () => {
   return response;
 };
 
+// 프로필 조회 api
+export const profile: any = async () => {
+  const response = await unAuthAPI.get(API_ROUTE.AUTH.MAIN_PAGE);
+  return response;
+};
+
 // 로그인 api
 export const logIn: any = async (data: any) => {
   const response = await unAuthAPI.post(API_ROUTE.AUTH.LOG_IN, data);

@@ -21,21 +21,21 @@ export const NavigationButtons: FC<NavigationButtonsProps> = ({
                    menuVisible ? 'right-[0.5%] translate-x-0' : 'translate-x-full'
                  }`}
     >
-      <Image src="/icons/menu.png" alt="menu" fill />
+      <Image src="/images/icons/use/01menu.png" alt="menu" fill />
     </button>
     
     <button
       onClick={() => onScrollClick('top')}
       className="fixed z-[10000] w-[30px] h-[30px] top-[89%] right-[0.5%] bg-transparent cursor-pointer"
     >
-      <Image src="/icons/top.png" alt="scroll to top" fill />
+      <Image src="/images/icons/use/14way-north.png" alt="scroll to top" fill />
     </button>
     
     <button
       onClick={() => onScrollClick('low')}
       className="fixed z-[10000] w-[30px] h-[30px] top-[95%] right-[0.5%] bg-transparent cursor-pointer"
     >
-      <Image src="/icons/low.png" alt="scroll to bottom" fill />
+      <Image src="/images/icons/use/16way-south.png" alt="scroll to bottom" fill />
     </button>
   </>
 );

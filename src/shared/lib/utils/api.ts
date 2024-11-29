@@ -5,6 +5,7 @@ const AUTH = Object.freeze({
   JOIN: "/aa/auth/join",
   UPDATE: "/aa/user/update",
   MAIN_PAGE: `/aa/main.do`,
+  // PROFILE: `/aa//api/user/profile`,
   GALLERY_BEST_INFO: `/aa/gallery/firstInfo`,
   GALLERY_LIST: (
     page: number,
